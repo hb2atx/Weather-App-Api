@@ -1,4 +1,4 @@
-
+import requests
 from flask import Flask,render_template,redirect,session,flash, request, url_for, request
 from models import db, connect_db, User, City
 from sqlalchemy.exc import IntegrityError
@@ -73,6 +73,7 @@ def post_weather():
         
     return redirect(url_for('get_weather'))
 
+
 @app.route('/delete/<int:city_id>')
 def delete_city(city_id):
     city = City.query.filter_by(id=city_id).first()
@@ -86,7 +87,7 @@ def get_weather_data(city):
 
     url = f'http://api.openweathermap.org/data/2.5/weather?q={ city }&units=imperial&appid=e8be59ed5fc5ed481b05b11c923c5198'
 
-    response = request.get(url).json()
+    response = requests.get(url).json()
 
     return response
    
