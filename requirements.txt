@@ -76,7 +76,6 @@ pyOpenSSL==21.0.0
 pyparsing==2.4.7
 pyppeteer==1.0.2
 pyquery==2.0.0
-python-apt==2.4.0+ubuntu1
 python-dotenv==1.0.0
 pytz==2022.1
 PyYAML==5.4.1
