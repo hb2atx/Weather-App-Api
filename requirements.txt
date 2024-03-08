@@ -11,7 +11,6 @@ click==8.1.7
 colorama==0.4.6
 cryptography==3.4.8
 cssselect==1.2.0
-dbus-python==1.2.18
 decorator==5.1.1
 distro==1.7.0
 dnspython==2.4.2
