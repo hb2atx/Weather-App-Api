@@ -1,4 +1,4 @@
-import requests
+
 from flask import Flask,render_template,redirect,session,flash, request, url_for
 from models import db, connect_db, User, City
 from sqlalchemy.exc import IntegrityError
