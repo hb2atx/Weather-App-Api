@@ -15,7 +15,6 @@ cssselect==1.2.0
 dbus-python==1.2.18
 decorator==5.1.1
 distro==1.7.0
-distro-info===1.1build1
 dnspython==2.4.2
 dominate==2.9.0
 email-validator==2.1.0.post1
