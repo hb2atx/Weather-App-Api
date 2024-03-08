@@ -10,7 +10,7 @@ from forms import LoginForm, RegisterForm
 app = Flask(__name__)
 app.app_context().push()
 
-app.config["SQLALCHEMY_DATABASE_URI"] = 'postgres://wuqvebps:tK2qW1Cak1hYWylT1PL_QXKcAAjeFz6s@bubble.db.elephantsql.com/wuqvebps'
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgres://springboardproject'
 app.config["SECRET_KEY"] = "mysecretkey"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config['SQLALCHEMY_ECHO'] = True
