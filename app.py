@@ -1,5 +1,5 @@
-import requests
-from flask import Flask,render_template,redirect,session,flash, request, url_for
+
+from flask import Flask,render_template,redirect,session,flash, request, url_for, request
 from models import db, connect_db, User, City
 from sqlalchemy.exc import IntegrityError
 
@@ -86,7 +86,7 @@ def get_weather_data(city):
 
     url = f'http://api.openweathermap.org/data/2.5/weather?q={ city }&units=imperial&appid=e8be59ed5fc5ed481b05b11c923c5198'
 
-    response = requests.get(url).json()
+    response = request.get(url).json()
 
     return response
    
