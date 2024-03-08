@@ -7,3 +7,5 @@ The postgresql database store user register and Login information and also the c
 There is also logout functionality so you dont have to re enter login credentials.
 
 You have the functionality of deleting a city once you have viewed the weather.
+
+openweather api = https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
