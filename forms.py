@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired,EqualTo, Length, ValidationError
-from models import User
+from models import User, db
 
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
@@ -27,6 +27,6 @@ class RegisterForm(FlaskForm):
         username = self.username.data
         password = self.password.data
         new_user = User.register(username, password)
-
+        
         db.session.add(new_user)
         db.session.commit()
